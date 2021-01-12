@@ -1,0 +1,15 @@
+@media screen and (max-width: 1340px) {
+  .left {
+    position: absolute;
+    background-image: url("../images/Mask-Group-1.png");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 140px;
+    background-size: 100% 100%;
+    width: 51%;
+    margin: 29px 0 0 0;
+    padding: 100px 0 200px 82px;
+    min-height: 630px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

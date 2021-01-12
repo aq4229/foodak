@@ -1,3 +1,65 @@
+$primary-color: rgb(136, 211, 225);
+$secondary-color:rgb(46, 49, 146);
+body {
+    background-color: $primary-color;
+    // overflow: hidden;
+}
+
+.banner {
+    // background-image: url('../images/1.png');
+    background-image: green;
+    background-repeat: no-repeat;
+    .bannerbackground {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 0;
+    }
+    // position: absolute;
+    // background-image: url("../images/Mask-Group-1.png");
+    // background-repeat: no-repeat;
+    // right: 0;
+    // top: 140px;
+    // background-size: 100% 100%;
+    // width: 51%;
+    // margin: 29px 0 0 0;
+    // padding: 100px 0 200px 82px;
+    // min-height: 630px;
+    .left {
+        position: absolute;
+        background-image: url(../images/Mask-Group-1.png);
+        background-repeat: no-repeat;
+        right: 0;
+        top: 140px;
+        background-size: cover;
+        width: 51%;
+        margin: 29px 0 0 0;
+        padding: 100px 0 30px 82px;
+        min-height: 600px;
+        // .leftimg {
+        //     position: absolute;
+        //     right: 0;
+        //     z-index: -1;
+        //     left: 45%;
+        // }
+        .leftcontent {
+            h2 {
+                color: $secondary-color;
+            }
+            p {
+                width: 65%;
+                color: white;
+            }
+            .link {
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
 h1 {
-    color: red;
+    color: $secondary-color;
 }

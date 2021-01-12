@@ -1,0 +1,48 @@
+body {
+  background-color: #88d3e1;
+}
+
+.banner {
+  background-image: green;
+  background-repeat: no-repeat;
+}
+
+.banner .bannerbackground {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: 0;
+}
+
+.banner .left {
+  position: absolute;
+  background-image: url(../images/Mask-Group-1.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 140px;
+  background-size: cover;
+  width: 51%;
+  margin: 29px 0 0 0;
+  padding: 100px 0 30px 82px;
+  min-height: 600px;
+}
+
+.banner .left .leftcontent h2 {
+  color: #2e3192;
+}
+
+.banner .left .leftcontent p {
+  width: 65%;
+  color: white;
+}
+
+.banner .left .leftcontent .link img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h1 {
+  color: #2e3192;
+}
+/*# sourceMappingURL=style.css.map */
