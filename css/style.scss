@@ -1,65 +1,450 @@
-$primary-color: rgb(136, 211, 225);
-$secondary-color:rgb(46, 49, 146);
-body {
-    background-color: $primary-color;
-    // overflow: hidden;
-}
-
-.banner {
-    // background-image: url('../images/1.png');
-    background-image: green;
-    background-repeat: no-repeat;
-    .bannerbackground {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        top: 0;
-    }
-    // position: absolute;
-    // background-image: url("../images/Mask-Group-1.png");
-    // background-repeat: no-repeat;
-    // right: 0;
-    // top: 140px;
-    // background-size: 100% 100%;
-    // width: 51%;
-    // margin: 29px 0 0 0;
-    // padding: 100px 0 200px 82px;
-    // min-height: 630px;
-    .left {
-        position: absolute;
-        background-image: url(../images/Mask-Group-1.png);
-        background-repeat: no-repeat;
-        right: 0;
-        top: 140px;
-        background-size: cover;
-        width: 51%;
-        margin: 29px 0 0 0;
-        padding: 100px 0 30px 82px;
-        min-height: 600px;
-        // .leftimg {
-        //     position: absolute;
-        //     right: 0;
-        //     z-index: -1;
-        //     left: 45%;
-        // }
-        .leftcontent {
-            h2 {
-                color: $secondary-color;
-            }
-            p {
-                width: 65%;
-                color: white;
-            }
-            .link {
-                img {
-                    object-fit: contain;
-                }
-            }
-        }
-    }
-}
-
-h1 {
-    color: $secondary-color;
-}
+                    $primary-color: #88d3e1;
+                    $secondary-color:rgb(46, 49, 146);
+                    $background-color:#edf9fb;
+                    body {
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        background-color: $background-color;
+                        font-size: 14px;
+                        // overflow: hidden;
+                    }
+                    
+                    header {
+                        nav {
+                            padding: 1em 0;
+                        }
+                        .navbar-brand {
+                            width: 13%;
+                        }
+                    }
+                    
+                    ul.nav li {
+                        margin: 0 10px;
+                        &:first-child {
+                            padding-right: 15px;
+                            border-right: 2px solid white;
+                        }
+                        a {
+                            color: white;
+                            font-weight: bold;
+                            font-size: 1.5em;
+                            transition: 0.3s color ease-in;
+                            -webkit-transition: 0.3s color ease-in;
+                            -moz-transition: 0.3s color ease-in;
+                            -ms-transition: 0.3s color ease-in;
+                            -o-transition: 0.3s color ease-in;
+                            &:hover {
+                                color: $secondary-color;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    
+                    .banner {
+                        // background-image: url('../images/1.png');
+                        background-image: green;
+                        background-repeat: no-repeat;
+                        .bannerbackground {
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            z-index: -1;
+                            top: 0;
+                        }
+                        // position: absolute;
+                        // background-image: url("../images/Mask-Group-1.png");
+                        // background-repeat: no-repeat;
+                        // right: 0;
+                        // top: 140px;
+                        // background-size: 100% 100%;
+                        // width: 51%;
+                        // margin: 29px 0 0 0;
+                        // padding: 100px 0 200px 82px;
+                        // min-height: 630px;
+                        .left {
+                            position: absolute;
+                            background-image: url(../images/Mask-Group-1.png);
+                            background-repeat: no-repeat;
+                            right: 0;
+                            top: 140px;
+                            background-size: cover;
+                            width: 60%;
+                            margin: 29px 0 0 0;
+                            padding: 100px 0 30px 82px;
+                            min-height: 650px;
+                            h2 {
+                                color: $secondary-color;
+                                font-size: 1.5em;
+                            }
+                            .leftimg {
+                                text-align: center;
+                            }
+                            // .leftimg {
+                            //     position: absolute;
+                            //     right: 0;
+                            //     z-index: -1;
+                            //     left: 45%;
+                            // }
+                            .leftcontent {
+                                width: 80%;
+                                margin: 0 auto;
+                                h2 {
+                                    color: $secondary-color;
+                                }
+                                p {
+                                    width: 60%;
+                                    color: white;
+                                    margin-left: 2%;
+                                    border-right: 3px solid white;
+                                    padding-right: 30px;
+                                    margin-bottom: 0px;
+                                    margin-right: 10px;
+                                }
+                                .link {
+                                    img {
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .purpose {
+                        background-image: url('./../images/Mask2.png'), url('./../images/emoji.png');
+                        background-position: top left, top right;
+                        background-repeat: no-repeat, no-repeat;
+                        h1 {
+                            font-size: 3.5rem;
+                            font-weight: bold;
+                            color: $primary-color;
+                            span {
+                                color: $secondary-color;
+                            }
+                        }
+                        .cards {
+                            min-height: 470px;
+                            .card {
+                                min-height: 206px;
+                                background-color: white;
+                                border-radius: 1rem;
+                                margin: 0 10px;
+                                flex-basis: 18%;
+                                align-self: center;
+                                -webkit-border-radius: 1rem;
+                                -moz-border-radius: 1rem;
+                                -ms-border-radius: 1rem;
+                                -o-border-radius: 1rem;
+                                .card-img-top {
+                                    width: 86%;
+                                    margin: 0 auto;
+                                    margin-top: -2.2em;
+                                }
+                                .card-content {
+                                    text-align: center;
+                                    .card-title {
+                                        padding: 1rem;
+                                        margin: 0;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        color: $secondary-color;
+                                        span {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    // align-content: top;
+                                    //height: 100%;
+                                    //overflow: visible;
+                                    .card-text {
+                                        background-color: white;
+                                        display: block;
+                                        border-radius: 1rem;
+                                    }
+                                }
+                                // height: 12vh;
+                                // overflow: hidden;
+                                .card-text {
+                                    display: none;
+                                    padding: 0 15px 15px 15px;
+                                    margin: 0 auto 15px auto;
+                                    font-size: 0.8rem;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .foodakcustomter {
+                        &::before {
+                            content: '';
+                            background: url('../images/MaskGroup66.png');
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            z-index: -100;
+                            height: 100%;
+                            top: -553px;
+                            right: 6%;
+                            width: 100%;
+                        }
+                    }
+                    
+                    // background-image: url('../images/MaskGroup6.png'), url('../images/emoji.png');
+                    .carousel-inner,
+                    .carousel,
+                    .carousel-item,
+                    .container,
+                    .fill {
+                        // height: 100%;
+                        min-height: 400px;
+                        width: 100%;
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    
+                    .slide-wrapper {
+                        display: inline;
+                    }
+                    
+                    .slide-wrapper .container {
+                        padding: 0;
+                    }
+                    /*------------------------------ vertical bootstrap slider----------------------------*/
+                    
+                    .carousel-inner>.carousel-item.carousel-item-next,
+                    .carousel-inner>.carousel-item.active.carousel-item-right {
+                        transform: translate3d(0, 100%, 0);
+                        -webkit-transform: translate3d(0, 100%, 0);
+                        -ms-transform: translate3d(0, 100%, 0);
+                        -moz-transform: translate3d(0, 100%, 0);
+                        -o-transform: translate3d(0, 100%, 0);
+                        top: 0;
+                    }
+                    
+                    .carousel-inner>.carousel-item.carousel-item-prev,
+                    .carousel-inner>.carousel-item.active.carousel-item-left {
+                        transform: translate3d(0, -100%, 0);
+                        -webkit-transform: translate3d(0, -100%, 0);
+                        -moz-transform: translate3d(0, -100%, 0);
+                        -ms-transform: translate3d(0, -100%, 0);
+                        -o-transform: translate3d(0, -100%, 0);
+                        top: 0;
+                    }
+                    
+                    .carousel-inner>.carousel-item.next.carousel-item-left,
+                    .carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
+                    .carousel-inner>.carousel-item.active {
+                        transform: translate3d(0, 0, 0);
+                        -webkit-transform: translate3d(0, 0, 0);
+                        -ms-transform: translate3d(0, 0, 0);
+                        ;
+                        -moz-transform: translate3d(0, 0, 0);
+                        -o-transform: translate3d(0, 0, 0);
+                        top: 0;
+                    }
+                    /*------------------------------- vertical carousel indicators ------------------------------*/
+                    
+                    .carousel-indicators li {
+                        display: block;
+                        margin-bottom: 5px;
+                        border: 1px solid #00a199;
+                    }
+                    
+                    .carousel-indicators li.active {
+                        margin-bottom: 5px;
+                        background: #00a199;
+                    }
+                    
+                    .card-slider {
+                        display: flex;
+                        flex-direction: column;
+                        flex-basis: 55%;
+                        .card-right {
+                            margin: 0 0 0 auto;
+                            width: 87%;
+                            box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px 0px;
+                            border-radius: 1rem;
+                            -webkit-border-radius: 1rem;
+                            -moz-border-radius: 1rem;
+                            -ms-border-radius: 1rem;
+                            -o-border-radius: 1rem;
+                            background-color: white;
+                            .img {
+                                margin-left: -80px;
+                            }
+                            .img-content {
+                                flex-basis: 66%;
+                                text-align: right;
+                                padding: 20px;
+                                h6 {
+                                    display: inline-block;
+                                    line-height: 50px;
+                                    margin-right: 25px;
+                                    color: $secondary-color;
+                                }
+                                img {
+                                    border-radius: 50%;
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                                hr {
+                                    margin: 15px 0;
+                                    border-top: 1px solid #0000005c;
+                                }
+                                .risingstar {
+                                    img {
+                                        height: 14px;
+                                        width: 14px;
+                                    }
+                                }
+                                .text-left {
+                                    font-size: 0.7rem;
+                                }
+                            }
+                        }
+                        .card-left {
+                            margin: 0 auto 0 0;
+                            width: 87%;
+                            box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px 0px;
+                            border-radius: 1rem;
+                            -webkit-border-radius: 1rem;
+                            -moz-border-radius: 1rem;
+                            -ms-border-radius: 1rem;
+                            -o-border-radius: 1rem;
+                            background-color: white;
+                            .img {
+                                margin-right: -80px;
+                            }
+                            .img-content {
+                                width: 100%;
+                                text-align: left;
+                                padding: 20px;
+                                h6 {
+                                    display: inline-block;
+                                    line-height: 50px;
+                                    margin-left: 25px;
+                                    color: $secondary-color;
+                                }
+                                .headerimg {
+                                    border-radius: 50%;
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                                hr {
+                                    margin: 15px 0;
+                                    border-top: 1px solid #0000005c;
+                                }
+                                .risingstar {
+                                    img {
+                                        height: 14px;
+                                        width: 14px;
+                                    }
+                                }
+                                .text-left {
+                                    font-size: 0.7rem;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .customerheader {
+                        flex-basis: 33%;
+                        h1 {
+                            text-align: right;
+                            font-size: 3.5rem;
+                            font-weight: bold;
+                            color: $primary-color;
+                            span {
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+                    
+                    .arrow {
+                        // &:before {
+                        //     content: "\f004";
+                        //     font-family: FontAwesome;
+                        //     font-style: normal;
+                        //     font-weight: normal;
+                        //     text-decoration: inherit;
+                        //     /*--adjust as necessary--*/
+                        //     color: $primary-color;
+                        //     background-color: white;
+                        //     font-size: 18px;
+                        //     padding-right: 0.5em;
+                        // }
+                        margin: 0;
+                        text-align: right;
+                        i {
+                            background: white;
+                            padding: 5px 30px;
+                            font-size: 19px;
+                            margin: 5px 0;
+                        }
+                        .fa-chevron-up {
+                            color: $primary-color;
+                        }
+                        .fa-chevron-down {
+                            color: $secondary-color;
+                        }
+                    }
+                    
+                    .howtousecustomer {
+                        #playlist {
+                            background: grey;
+                            width: 100%;
+                        }
+                        .slick {
+                            background: black;
+                            color: white;
+                            text-align: center;
+                            border-right: 1px solid white;
+                        }
+                        .slick h3 {
+                            width: 106px;
+                        }
+                        .slick-active {
+                            background: orange;
+                        }
+                        .slick-center {
+                            background: yellow;
+                        }
+                        .leftArea {
+                            flex-basis: 33%;
+                            align-self: flex-end;
+                            h1 {
+                                font-size: 3.5rem;
+                                font-weight: bold;
+                                color: $primary-color;
+                                span {
+                                    color: $secondary-color;
+                                }
+                            }
+                            h2 {
+                                font-size: 10rem;
+                                color: $primary-color;
+                                font-weight: bold;
+                                display: inline-block;
+                            }
+                            p {
+                                color: $secondary-color;
+                                font-size: 1.4rem;
+                                text-align: left;
+                                display: inline-block;
+                                margin: 0;
+                                font-weight: bold;
+                                line-height: 24px;
+                                padding-left: 41px;
+                                display: inline-block;
+                                width: 70%;
+                            }
+                        }
+                        .carousel-indicators {
+                            bottom: -40px;
+                            li {
+                                background-color: $primary-color;
+                            }
+                        }
+                    }
